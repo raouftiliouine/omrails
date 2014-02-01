@@ -1,9 +1,15 @@
+<% if user_signed_in? %>
+    <h2>Mon nom est Raouf.</h2>
+<% else %>
+
 <div class="jumbotron">
     <h1>Welcome to Tagrid!</h1>
     <p>
       You've found the homepage for the Tagrid™ application.
     </p>
     <p>
-     <%= link_to "Sign Up Now!", "#", class: "btn btn-primary"%>
+     <%= link_to "Sign Up Now!", new_user_registration_path , class: "btn btn-primary"%>
     </p>
 </div>
+
+<% end %>

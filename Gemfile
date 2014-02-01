@@ -21,6 +21,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Devise is a flexible authentication solution for Rails based on Warden
+gem 'devise'
+
+# Simple Form aims to be as flexible as possible while helping you with powerful components to create your forms.
+gem 'simple_form'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -29,6 +35,8 @@ gem 'jbuilder', '~> 1.2'
 
 # bootstrap-sass is a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass', '~> 3.1.0'
+
+gem 'protected_attributes'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
