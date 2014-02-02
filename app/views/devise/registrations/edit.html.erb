@@ -6,11 +6,6 @@
 
   <%= f.input :name %>
   <%= f.input :email %>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
   <%= f.input :password, label: "New Password", autocomplete: "off"%>
   <%= f.input :password_confirmation, label: "New Password Confirmation", autocomplete: "off"%>
   <%= f.input :current_password%>
